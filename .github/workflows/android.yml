@@ -33,3 +33,7 @@ jobs:
       with:
         name: android-debug-apk
         path: app/build/outputs/apk/debug/*.apk
+            - name: Build with Gradle
+      run: ./gradlew assembleDebug
+      working-directory: ./YOUR_SUBFOLDER_NAME_HERE  # <-- Add this line if code is in a subfolder
+
